@@ -93,7 +93,7 @@ For loops - Use when you know EXACTLY how many iterations
 While loops - Use when you DON'T know how many iterations
 '''
 
-# Randum numbers
+# Random numbers
 import random  # This should always be on line 1
 print(random.randint(0, 100))
 
@@ -103,12 +103,23 @@ def grade_calc(percentage):
         return "A"
     elif percentage >= 80:
         return "B"
-    elif percentage >= 70:
-        return "C"
     elif percentage >= 60:
+        return "C"
+    elif percentage >= 70:
         return "D"
     else:
         return "F"
 
 
 print(grade_calc())
+
+# Equality Statements
+print(5 > 3)
+print(5 >= 3)
+print(3 == 3)
+print(3 != 4)
+
+'''
+a = 3 # A is set to 3
+a == 3 # Is equal to 3?
+'''
