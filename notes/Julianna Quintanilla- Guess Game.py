@@ -14,4 +14,3 @@ while loop > 0 and not win:
     elif guessed_number == a:
         print("You win, you guessed correctly.")
         win = True
-
