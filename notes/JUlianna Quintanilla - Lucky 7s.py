@@ -18,12 +18,12 @@ while money > 0:
         rounds += 1
     elif number1 + number2 < 7:
         print(number1 + number2)
-        money -=1
+        money -= 1
         print("Sorry, you lost one dollar")
         rounds += 1
     if money > most_money:
         most_money = money
-        best_rounds = rounds
+        best_round = rounds
 print("Sorry you lost. you played %d rounds" % rounds)
 print("The most amount of money you had was %d dollars" % most_money)
-print("The round with the most amount of money was %d." % best_rounds)
+print("The round with the most amount of money was %d." % best_round)
