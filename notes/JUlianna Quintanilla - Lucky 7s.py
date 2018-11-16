@@ -3,6 +3,7 @@ import random
 money = 15
 rounds = 0
 most_money = money
+best_rounds = most_money
 while money > 0:
     number1 = (random.randint(1, 6))
     number2 = (random.randint(1, 6))
@@ -23,7 +24,7 @@ while money > 0:
         rounds += 1
     if money > most_money:
         most_money = money
-        best_round = rounds
+        best_rounds = rounds
 print("Sorry you lost. you played %d rounds" % rounds)
 print("The most amount of money you had was %d dollars" % most_money)
-print("The round with the most amount of money was %d." % best_round)
+print("The round with the most amount of money was %d." % best_rounds)
