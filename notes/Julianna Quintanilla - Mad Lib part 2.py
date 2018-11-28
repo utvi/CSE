@@ -1,0 +1,18 @@
+word_list = []
+word_list.append(input("Give me a plural noun. "))
+word_list.append(input("Give me an adjective. "))
+word_list.append(input("Give me a plural noun. "))
+word_list.append(input("Give me a verb ending in ing. "))
+word_list.append(input("Give me a plural noun"))
+word_list.append(input("Give me an adjective. "))
+word_list.append(input("Give me a verb. "))
+word_list.append(input("Give me a noun. "))
+word_list.append(input("Give me a verb. "))
+word_list.append(input("Give me a verb. "))
+word_list.append(input("Give me a body part. "))
+
+print("High school was filled with ups and downs but the hardest part was cutting off %s. " % word_list[0])
+print("The %s %s were always %s with my %s. " % (word_list[1], word_list[2], word_list[3], word_list[4]))
+print("%s friends tried to warn me about people who %s. " % (word_list[5], word_list[6]))
+print("My favorite %s is the one that %s. " % (word_list[7], word_list[8]))
+print("Overall, I know I shouldn't %s but if I don't my %s hurts." % (word_list[9], word_list[10]))
