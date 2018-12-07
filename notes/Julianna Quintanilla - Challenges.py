@@ -40,8 +40,20 @@ def challenge4(number2):
     elif number2 <= 0:
         print("This number is negative")
 
+
 challenge4(-9)
 challenge4(8)
 challenge4(0)
 
 # Challenge 5
+
+
+def challenge5(r):
+    pi = 3.14
+    print(4 / 3 * pi * r ** 2)
+
+
+challenge5(7)
+challenge5(3.6)
+
+#Challenge6
