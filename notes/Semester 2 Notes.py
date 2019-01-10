@@ -17,3 +17,7 @@ colors.append("brown")
 print(colors)
 colors.pop(0)
 print(colors)
+
+
+print (len(colors))
+print (colors[1])
