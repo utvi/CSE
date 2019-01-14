@@ -137,7 +137,7 @@ print(shopping_list)
 print(shopping_list[0])
 
 # Looping through lists
-for item in shopping_list :
+for item in shopping_list:
     print(item)
 
 '''
@@ -203,7 +203,7 @@ for character in list1:
         # replace with a *
         current_index = list1.index(character)
         list1.pop(current_index)
-        list1_insert(current_index, "*")
+        list1.insert(current_index, "*")
 
 # changing lists into strings
 print("".join(list1))
