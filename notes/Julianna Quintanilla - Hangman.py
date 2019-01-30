@@ -11,14 +11,15 @@ letters_used = []
 correct_guesses = []
 wrong_guesses = []
 chosen_word = word_bank[random.randint(0, 9)]
+chosen_word_letters = list(chosen_word)
+guessed_letter = []
 chosen_word = chosen_word.lower()
 for i in range(0, len(chosen_word)):
     word_bank.append("*"*len(chosen_word))
     chosen_word = "*" * len(chosen_word)
-#   letters_used = input("Guess a letter. ")
 #    if letters_used in chosen_word:
 #    if letter.upper() == _.upper():
 #   chosen_word = "*"*len(chosen_word)
 print(chosen_word)
-letters_used = input("Guess a letter. ")
-
+letters_used = input("Guess a letter. ").lower()
+guessed_letter.append(letters_used)
