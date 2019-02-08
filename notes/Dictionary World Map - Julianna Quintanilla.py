@@ -10,7 +10,8 @@ world_map = {
     'PARKING_LOT': {
         'NAME': "The Parking Lot",
         'DESCRIPTION': "There are cars parked here. To "
-                       "the south is Mr. Wiebe's room",
+                       "the south is Mr. Wiebe's room. To the west is the "
+                       "Main hallway and to the east is the art building.",
         'PATHS': {
             'SOUTH': "R19A",
             'EAST': "ART_BUILDING",
@@ -19,7 +20,7 @@ world_map = {
     },
     'ART_BUILDING': {
         'NAME': "Art Building",
-        'DESCRIPTION': "There are paintings covering the walls."
+        'DESCRIPTION': "There are paintings covering the walls. "
                        "To the west is The Parking Lot",
         'PATHS': {
             'WEST': "PARKING_LOT"
@@ -28,8 +29,8 @@ world_map = {
     'HALLWAY': {
         'NAME': "Main Hallway",
         'DESCRIPTION': "This is the main hallway."
-                       "The Parking Lot is to the east,"
-                       "the quad is to the south, the gym is to the west"
+                       "The Parking Lot is to the east, "
+                       "the quad is to the south, the gym is to the west "
                        "and the library is to the north.",
         'PATHS': {
             'NORTH': "LIBRARY",
@@ -40,9 +41,9 @@ world_map = {
     },
     'LIBRARY': {
         'NAME': "The Library",
-        'DESCRIPTION': "This is the library. Books cover the walls"
-                       "and a little dog with glasses softly barks at you"
-                       "when you make too much noise. There's a path to"
+        'DESCRIPTION': "This is the library. Books cover the walls "
+                       "and a little dog with glasses softly barks at you "
+                       "when you make too much noise. There's a path to "
                        "the south back to the Main Hallway and a suspicious"
                        "door to the north.",
         'PATHS': {
@@ -50,7 +51,42 @@ world_map = {
             'NORTH': "SUSPICIOUS_ROOM"
         }
     },
-    'SUSPICIOUS_ROOM': {}
+    'SUSPICIOUS_ROOM': {
+        'NAME': "Suspicious Room",
+        'DESCRIPTION': "You are in a small brown room with a "
+                       "hatch up on the roof. You wonder how anybody "
+                       "could get up there.",
+        'PATHS': {
+            'UP': "KING_ROOM",
+            'SOUTH': "LIBRARY"
+        }
+    },
+    'KING_ROOM': {
+        'NAME': "King Shaggy's Room",
+        'DESCRIPTION': "You are in a large and lavish room, "
+                       "scooby snacks litter the floor. Before "
+                       "you is king shaggy the all mighty immortal leader "
+                       "and his henchman scooby.",
+        'PATHS': {
+            'DOWN': "SUSPICIOUS_ROOM"
+        }
+    },
+    'GYM': {
+        'NAME': "Gym",
+        'DESCRIPTION': "You are in the gym. Most of the ceiling lights are off "
+                       "besides a couple of them. A basketball is on the floor and only one "
+                       "basket is down. To the east is the main hall and to the south "
+                       "is the west building.",
+        'PATHS': {
+            'EAST': "HALLWAY",
+            'SOUTH': "WEST_BUILDING"
+        }
+    },
+    'WEST_BUILDING': {
+        'NAME': "The West Building",
+        'DESCRIPTION': "The west building is filled with classrooms. There's one unlocked "
+                       "bathroom to the west."
+    }
 
 }
 
@@ -62,6 +98,7 @@ playing = True
 # Controller
 while playing:
     print(current_node["NAME"])
+    print(current_node["DESCRIPTION"])
     command = input(">_")
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False

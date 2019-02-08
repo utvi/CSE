@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Julianna Quintanilla - Hangman.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #cc7832;}
+.s3 { color: #6a8759;}
+.s4 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Julianna Quintanilla - Hangman.py</font>
+</center></td></tr></table>
+<pre><span class="s0">#    import string</span>
+#    print(list(string.ascii_letters))
+#    print(string.digits)
+#    print(string.punctuation)
+<span class="s2">import </span><span class="s1">random</span>
+word_bank = [<span class="s3">&quot;mailman&quot;</span><span class="s2">, </span><span class="s3">&quot;lemon&quot;</span><span class="s2">, </span><span class="s3">&quot;speaker&quot;</span><span class="s2">, </span><span class="s3">&quot;peach&quot;</span><span class="s2">, </span><span class="s3">&quot;tricycle&quot;</span><span class="s2">,</span>
+             <span class="s3">&quot;night&quot;</span><span class="s2">, </span><span class="s3">&quot;bike&quot;</span><span class="s2">, </span><span class="s3">&quot;yellow&quot;</span><span class="s2">, </span><span class="s3">&quot;mothman&quot;</span><span class="s2">, </span><span class="s3">&quot;hippopotamus&quot;</span><span class="s1">]</span>
+turns_taken = <span class="s4">0</span>
+<span class="s1">remaining_guesses = </span><span class="s4">8</span>
+<span class="s1">letters_used = []</span>
+correct_guesses = []
+wrong_guesses = []
+chosen_word = word_bank[random.randint(<span class="s4">0</span><span class="s2">, </span><span class="s4">9</span><span class="s1">)]</span>
+chosen_word_letters = list(chosen_word)
+guessed_letter = []
+chosen_word = chosen_word.lower()
+<span class="s2">for </span><span class="s1">i </span><span class="s2">in </span><span class="s1">range(</span><span class="s4">0</span><span class="s2">, </span><span class="s1">len(chosen_word)):</span>
+    word_bank.append(<span class="s3">&quot;*&quot;</span><span class="s1">*len(chosen_word))</span>
+    chosen_word = <span class="s3">&quot;*&quot; </span><span class="s1">* len(chosen_word)</span>
+<span class="s0">#    if letters_used in chosen_word:</span>
+#    if letter.upper() == _.upper():
+#   chosen_word = &quot;*&quot;*len(chosen_word)
+<span class="s1">print(chosen_word)</span>
+letters_used = input(<span class="s3">&quot;Guess a letter. &quot;</span><span class="s1">).lower()</span>
+guessed_letter.append(letters_used)
+</pre>
+</body>
+</html>
