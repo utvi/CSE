@@ -85,7 +85,8 @@ world_map = {
     'WEST_BUILDING': {
         'NAME': "The West Building",
         'DESCRIPTION': "The west building is filled with classrooms. There's one unlocked "
-                       "bathroom to the west."
+                       "bathroom to the west.",
+        'PATHS':
     }
 
 }
