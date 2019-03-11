@@ -3,8 +3,8 @@ import Special_Random
 
 # class WaterGun(object):
 #    def __init__(self, capacity=5.2, distance=30, stock=False, ):
-#        # These are things that the WaterGun has.
-#        # All of these should be relevant to our program
+# These are things that the WaterGun has.
+# All of these should be relevant to our program
 #        self.capacity = capacity
 #        self.range = distance
 #        self.trigger = True

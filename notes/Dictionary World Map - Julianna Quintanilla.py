@@ -41,11 +41,9 @@ world_map = {
     },
     'LIBRARY': {
         'NAME': "The Library",
-        'DESCRIPTION': "This is the library. Books cover the walls "
-                       "and a little dog with glasses softly barks at you "
-                       "when you make too much noise. There's a path to "
-                       "the south back to the Main Hallway and a suspicious"
-                       "door to the north.",
+        'DESCRIPTION': "This is the library. Books cover the walls. "
+                       "There's a path to the south back to the Main "
+                       "Hallway and a suspicious door to the north.",
         'PATHS': {
             'SOUTH': "HALLWAY",
             'NORTH': "SUSPICIOUS_ROOM"
