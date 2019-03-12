@@ -56,5 +56,27 @@ class DiamondBow(Bow):
 
 class BattleAxe(Weapon):
     def __init__(self, name, head_type, handle_type):
-        super(BattleAxe, self).__init__(name, head_type, handle_type)
-        
+        super(BattleAxe, self).__init__(name, head_type)
+        self.handle_type = handle_type
+        self.damage = 20
+
+    def swing_forward(self):
+        print("You swing forward.")
+
+    def swing_left(self):
+        print("You swing to your left.")
+
+    def swing_right(self):
+        print("You swing to your right.")
+
+
+class IronBattleAxe(BattleAxe):
+    def __init__(self):
+        super(IronBattleAxe, self).__init__("Iron Battle Axe", "Iron", "One-handed")
+        self.damage = 20
+
+
+class DiamondBattleAxe(BattleAxe):
+    def __init__(self):
+        super(DiamondBattleAxe, self).__init__("Diamond Battle Axe", "Diamond", "One-handed")
+        self.damage = 25
