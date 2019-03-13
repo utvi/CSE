@@ -1,3 +1,32 @@
+class Item(object):
+    def __init__(self, name):
+        self.name = name
+
+
+class Weapon(object):
+    def __init__(self, name, damage):
+        self.name = name
+        self.damage = damage
+
+
+class Character(object):
+    def __init__(self, name, health, weapon, armor):
+        self.name = name
+        self.health = health
+        self.weapon = weapon
+        self.armor = armor
+
+    def take_damage(self, damage):
+        self.health -= damage
+        if self.health < 0:
+            self.health = 0
+            print("%s has %d health left" % (self.name, self.health))
+
+    def attack(self, target):
+        print("%s attacks %s for %d damage" % (self.name, target.name, self.weapon.damage))
+        target.take_damage(self.weapon.damage)
+
+
 class Player(object):
     def __init__(self, starting_location):
         self.health = 100
@@ -65,7 +94,15 @@ library = Room('Library', 'suspicious_room', 'library', None, None, None, None,
                "There's a path to the south back to the Main Hallway "
                "and a suspicious door to the north.",)
 
+sword = Weapon("sword", 15)
+sword2 = Weapon("Orc Sword", 5)
+
 player = Player(R19A)
+
+c1 = Character("Orc1", 100, sword, None)
+c2 = Character("Orc2", 100, sword2, None)
+c1.attack(c2)
+c2.attack(c1)
 
 playing = True
 directions = ['north', 'south', 'east', 'west', 'up', 'down']
