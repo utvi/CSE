@@ -79,6 +79,8 @@ taser_gun1 = Weapon("Taser Gun", 90)
 spray1 = Weapon("Pepper Spray", 20)
 spray2 = Weapon("Anti-Weeb Spray", 50)
 spray3 = Weapon("Anti-Wiebe Spray", 200)
+special1 = Weapon("Moth Claws", 900)
+special2 = Weapon("Hee Hee", 10)
 dog_treat1 = Item("Green Treat")
 dog_treat2 = Item("Brown Treat")
 dog_toy1 = Item("Hard Dog Toy")
@@ -92,6 +94,8 @@ armor3 = Armor("Diamond Armor", 80)
 armor4 = Armor("Legendary Armor", 100)
 # characters
 npc1 = Character("Juli", 200, battle_axe3, armor4)
+npc2 = Character("Mothman", 900, spray1, special1)
+npc3 = Character("Michael Jackson", 40, special2)
 
 # rooms
 
