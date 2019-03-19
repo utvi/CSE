@@ -9,6 +9,12 @@ class Weapon(object):
         self.damage = damage
 
 
+class Armor(object):
+    def __init__(self, name, protection):
+        self.name = name
+        self.protection = protection
+
+
 class Character(object):
     def __init__(self, name, health, weapon, armor):
         self.name = name
@@ -44,7 +50,7 @@ class Player(object):
 
 class Room(object):
     def __init__(self, name, north=None, south=None, east=None, west=None,
-                 up=None, down=None, description="", character=""):
+                 up=None, down=None, description="", character="", items=[]):
         self.name = name
         self.north = north
         self.south = south
@@ -54,7 +60,40 @@ class Room(object):
         self.down = down
         self.description = description
         self.character = character
+        self.items = items
 
+# Items
+
+
+pan = Weapon("Frying Pan", 5)
+sword1 = Weapon("Sword", 15)
+sword2 = Weapon("Orc Sword", 5)
+sword3 = Weapon("Iron Sword", 10)
+sword4 = Weapon("Diamond Sword", 25)
+bow1 = Weapon("Wood Bow", 15)
+bow2 = Weapon("Diamond Bow", 25)
+battle_axe1 = Weapon("Iron Battle Axe", 20)
+battle_axe2 = Weapon("Diamond Battle Axe", 30)
+battle_axe3 = Weapon("Legendary Battle Axe", 40)
+taser_gun1 = Weapon("Taser Gun", 90)
+spray1 = Weapon("Pepper Spray", 20)
+spray2 = Weapon("Anti-Weeb Spray", 50)
+spray3 = Weapon("Anti-Wiebe Spray", 200)
+dog_treat1 = Item("Green Treat")
+dog_treat2 = Item("Brown Treat")
+dog_toy1 = Item("Hard Dog Toy")
+dog_toy2 = Item("Soft Dog Toy")
+pillow1 = Item("Liam Neeson Pillow Body Pillow")
+pillow2 = Item("Pepe The Frog Pillow")
+pillow3 = Item("Bob Ross Pillow Body Pillow")
+armor1 = Armor("Leather Armor", 30)
+armor2 = Armor("Iron Armor", 50)
+armor3 = Armor("Diamond Armor", 80)
+armor4 = Armor("Legendary Armor", 100)
+# characters
+npc1 = Character("Juli", 200, battle_axe3, armor4)
+
+# rooms
 
 # Option 1
 R19A = Room("R19A")
@@ -94,8 +133,6 @@ library = Room('Library', 'suspicious_room', 'library', None, None, None, None,
                "There's a path to the south back to the Main Hallway "
                "and a suspicious door to the north.",)
 
-sword = Weapon("sword", 15)
-sword2 = Weapon("Orc Sword", 5)
 
 player = Player(R19A)
 

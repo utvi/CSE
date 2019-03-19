@@ -60,11 +60,10 @@ world_map = {
         }
     },
     'KING_ROOM': {
-        'NAME': "King Shaggy's Room",
+        'NAME': "King Wiebe's Secret Room",
         'DESCRIPTION': "You are in a large and lavish room, "
-                       "scooby snacks litter the floor. Before "
-                       "you is king shaggy the all mighty immortal leader "
-                       "and his henchman scooby.",
+                       "Before you is King Wiebe, the all mighty immortal leader "
+                       "and his henchman Eggman.",
         'PATHS': {
             'DOWN': "SUSPICIOUS_ROOM"
         }

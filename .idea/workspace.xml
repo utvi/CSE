@@ -41,14 +41,14 @@
     <session id="1888986212">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="40" />
+          <entry key="project.closed" value="44" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.33" value="2" />
           <entry key="project.open.time.34" value="2" />
-          <entry key="project.open.time.35" value="5" />
+          <entry key="project.open.time.35" value="6" />
           <entry key="project.open.time.36" value="4" />
           <entry key="project.open.time.37" value="3" />
           <entry key="project.open.time.38" value="2" />
@@ -56,17 +56,18 @@
           <entry key="project.open.time.40" value="1" />
           <entry key="project.open.time.41" value="2" />
           <entry key="project.open.time.42" value="3" />
+          <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.47" value="2" />
-          <entry key="project.open.time.52" value="2" />
+          <entry key="project.open.time.52" value="3" />
           <entry key="project.open.time.54" value="2" />
           <entry key="project.open.time.58" value="1" />
           <entry key="project.open.time.59" value="1" />
-          <entry key="project.open.time.61" value="1" />
+          <entry key="project.open.time.61" value="2" />
           <entry key="project.open.time.63" value="1" />
           <entry key="project.open.time.67" value="1" />
           <entry key="project.open.time.69" value="1" />
           <entry key="project.open.time.80" value="1" />
-          <entry key="project.opened" value="42" />
+          <entry key="project.opened" value="46" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -83,12 +84,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="16470" />
+          <entry key="py" value="19986" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="16470" />
+          <entry key="Python" value="19986" />
         </counts>
       </usages-collector>
     </session>
@@ -101,8 +102,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/notes/Dictionary World Map - Julianna Quintanilla.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1717">
-              <caret line="101" column="38" selection-start-line="101" selection-start-column="38" selection-end-line="101" selection-end-column="38" />
+            <state relative-caret-position="1105">
+              <caret line="65" column="46" selection-start-line="65" selection-start-column="46" selection-end-line="65" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -121,42 +122,47 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/notes/Items- Julianna Quintanilla.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
+            <state relative-caret-position="375">
+              <caret line="162" lean-forward="true" selection-start-line="162" selection-end-line="162" />
               <folding>
-                <marker date="1552491787585" expanded="true" signature="21:26" ph="..." />
-                <marker date="1552491787585" expanded="true" signature="706:711" ph="..." />
-                <marker date="1552491787585" expanded="true" signature="842:847" ph="..." />
-                <marker date="1552491787585" expanded="true" signature="1066:1071" ph="..." />
-                <marker date="1552491787585" expanded="true" signature="1354:1359" ph="..." />
-                <marker date="1552491787585" expanded="true" signature="1758:1763" ph="..." />
-                <marker date="1552491787585" expanded="true" signature="1910:1915" ph="..." />
-                <marker date="1552491787585" expanded="true" signature="2073:2078" ph="..." />
+                <marker date="1553008571144" expanded="true" signature="21:26" ph="..." />
+                <marker date="1553008571144" expanded="true" signature="502:507" ph="..." />
+                <marker date="1553008571144" expanded="true" signature="638:643" ph="..." />
+                <marker date="1553008571144" expanded="true" signature="796:801" ph="..." />
+                <marker date="1553008571144" expanded="true" signature="1084:1089" ph="..." />
+                <marker date="1553008571144" expanded="true" signature="1284:1289" ph="..." />
+                <marker date="1553008571144" expanded="true" signature="1434:1439" ph="..." />
+                <marker date="1553008571144" expanded="true" signature="1595:1600" ph="..." />
+                <marker date="1553008571144" expanded="true" signature="2419:2531" ph="..." />
+                <marker date="1553008571144" expanded="true" signature="2550:2555" ph="..." />
+                <marker date="1553008571144" expanded="true" signature="2629:2634" ph="..." />
+                <marker date="1553008571144" expanded="true" signature="2844:2927" ph="..." />
+                <marker date="1553008571144" expanded="true" signature="2946:2951" ph="..." />
+                <marker date="1553008571144" expanded="true" signature="3147:3228" ph="..." />
+                <marker date="1553008571144" expanded="true" signature="3247:3252" ph="..." />
+                <marker date="1553008571144" expanded="true" signature="3348:3353" ph="..." />
+                <marker date="1553008571144" expanded="true" signature="3463:3468" ph="..." />
+                <marker date="1553008571144" expanded="true" signature="3580:3585" ph="..." />
+                <marker date="1553008571144" expanded="true" signature="3826:3831" ph="..." />
+                <marker date="1553008571144" expanded="true" signature="3930:3935" ph="..." />
+                <marker date="1553008571144" expanded="true" signature="4031:4036" ph="..." />
+                <marker date="1553008571144" expanded="true" signature="4140:4145" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/notes/world_map - Julianna Quintanilla.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="254">
+              <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
               <folding>
-                <marker date="1552491415667" expanded="true" signature="19:77" ph="..." />
+                <marker date="1553009301364" expanded="true" signature="19:77" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/notes/object notes- Julianna Quintanilla.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -183,13 +189,13 @@
         <option value="$PROJECT_DIR$/notes/Dictionary - Julianna Quintanilla.py" />
         <option value="$PROJECT_DIR$/notes/Special_Random.py" />
         <option value="$PROJECT_DIR$/notes/world_map.ipynb" />
-        <option value="$PROJECT_DIR$/notes/Dictionary World Map - Julianna Quintanilla.py" />
         <option value="$PROJECT_DIR$/notes/world_map.py" />
         <option value="$PROJECT_DIR$/notes/WorldMap.py" />
         <option value="$PROJECT_DIR$/notes/Inheritance.py" />
         <option value="$PROJECT_DIR$/notes/object notes- Julianna Quintanilla.py" />
-        <option value="$PROJECT_DIR$/notes/world_map - Julianna Quintanilla.py" />
+        <option value="$PROJECT_DIR$/notes/Dictionary World Map - Julianna Quintanilla.py" />
         <option value="$PROJECT_DIR$/notes/Items- Julianna Quintanilla.py" />
+        <option value="$PROJECT_DIR$/notes/world_map - Julianna Quintanilla.py" />
       </list>
     </option>
   </component>
@@ -467,10 +473,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/notes/object notes- Julianna Quintanilla.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/notes/Dictionary World Map - Julianna Quintanilla.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1717">
-          <caret line="101" column="38" selection-start-line="101" selection-start-column="38" selection-end-line="101" selection-end-column="38" />
+        <state relative-caret-position="1105">
+          <caret line="65" column="46" selection-start-line="65" selection-start-column="46" selection-end-line="65" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -486,36 +499,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notes/object notes- Julianna Quintanilla.py">
+    <entry file="file://$PROJECT_DIR$/notes/Items- Julianna Quintanilla.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+        <state relative-caret-position="375">
+          <caret line="162" lean-forward="true" selection-start-line="162" selection-end-line="162" />
+          <folding>
+            <marker date="1553008571144" expanded="true" signature="21:26" ph="..." />
+            <marker date="1553008571144" expanded="true" signature="502:507" ph="..." />
+            <marker date="1553008571144" expanded="true" signature="638:643" ph="..." />
+            <marker date="1553008571144" expanded="true" signature="796:801" ph="..." />
+            <marker date="1553008571144" expanded="true" signature="1084:1089" ph="..." />
+            <marker date="1553008571144" expanded="true" signature="1284:1289" ph="..." />
+            <marker date="1553008571144" expanded="true" signature="1434:1439" ph="..." />
+            <marker date="1553008571144" expanded="true" signature="1595:1600" ph="..." />
+            <marker date="1553008571144" expanded="true" signature="2419:2531" ph="..." />
+            <marker date="1553008571144" expanded="true" signature="2550:2555" ph="..." />
+            <marker date="1553008571144" expanded="true" signature="2629:2634" ph="..." />
+            <marker date="1553008571144" expanded="true" signature="2844:2927" ph="..." />
+            <marker date="1553008571144" expanded="true" signature="2946:2951" ph="..." />
+            <marker date="1553008571144" expanded="true" signature="3147:3228" ph="..." />
+            <marker date="1553008571144" expanded="true" signature="3247:3252" ph="..." />
+            <marker date="1553008571144" expanded="true" signature="3348:3353" ph="..." />
+            <marker date="1553008571144" expanded="true" signature="3463:3468" ph="..." />
+            <marker date="1553008571144" expanded="true" signature="3580:3585" ph="..." />
+            <marker date="1553008571144" expanded="true" signature="3826:3831" ph="..." />
+            <marker date="1553008571144" expanded="true" signature="3930:3935" ph="..." />
+            <marker date="1553008571144" expanded="true" signature="4031:4036" ph="..." />
+            <marker date="1553008571144" expanded="true" signature="4140:4145" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/notes/world_map - Julianna Quintanilla.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="254">
+          <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
           <folding>
-            <marker date="1552491415667" expanded="true" signature="19:77" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/notes/Items- Julianna Quintanilla.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
-          <folding>
-            <marker date="1552491787585" expanded="true" signature="21:26" ph="..." />
-            <marker date="1552491787585" expanded="true" signature="706:711" ph="..." />
-            <marker date="1552491787585" expanded="true" signature="842:847" ph="..." />
-            <marker date="1552491787585" expanded="true" signature="1066:1071" ph="..." />
-            <marker date="1552491787585" expanded="true" signature="1354:1359" ph="..." />
-            <marker date="1552491787585" expanded="true" signature="1758:1763" ph="..." />
-            <marker date="1552491787585" expanded="true" signature="1910:1915" ph="..." />
-            <marker date="1552491787585" expanded="true" signature="2073:2078" ph="..." />
+            <marker date="1553009301364" expanded="true" signature="19:77" ph="..." />
           </folding>
         </state>
       </provider>
