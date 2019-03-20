@@ -78,7 +78,7 @@ battle_axe3 = Weapon("Legendary Battle Axe", 40)
 taser_gun1 = Weapon("Taser Gun", 90)
 spray1 = Weapon("Pepper Spray", 20)
 spray2 = Weapon("Anti-Weeb Spray", 50)
-spray3 = Weapon("Anti-Wiebe Spray", 200)
+spray3 = Weapon("Anti-Wiebe Spray", 300)
 special1 = Weapon("Moth Claws", 900)
 special2 = Weapon("Hee Hee", 10)
 dog_treat1 = Item("Green Treat")
@@ -92,17 +92,23 @@ armor1 = Armor("Leather Armor", 30)
 armor2 = Armor("Iron Armor", 50)
 armor3 = Armor("Diamond Armor", 80)
 armor4 = Armor("Legendary Armor", 100)
+armor5 = Armor("Wiebe Armor", 150)
+armor6 = Armor("Egg Shell", 25)
 # characters
 npc1 = Character("Juli", 200, battle_axe3, armor4)
-npc2 = Character("Mothman", 900, spray1, special1)
-npc3 = Character("Michael Jackson", 40, special2)
-
+npc2 = Character("Mothman", 900, special1, None)
+npc3 = Character("Michael Jackson", 40, special2, None)
+npc4 = Character("King Wiebe", 600, taser_gun1, armor5)
+npc5 = Character("Eggman", 100, sword1, armor6)
 # rooms
-
-# Option 1
 R19A = Room("R19A")
 art_building = Room("Art Building")
 hallway = Room("Hallway")
+library = Room("Library")
+quad = Room("Quad")
+gym = Room("Gym")
+suspicious_room = Room("Suspicious Room")
+
 parking_lot = Room('The Parking Lot', None, R19A, art_building, hallway, None, None,
                    "There are cars parked here. To the south is Mr. Wiebe's room."
                    " To the west is the Main hallway and to the east is the art building.")
@@ -119,9 +125,6 @@ art_building = Room('Art Building', None, parking_lot, None, None, None, None,
                     "To the west is The Parking Lot")
 
 art_building.west = parking_lot
-library = Room("Library")
-quad = Room("Quad")
-gym = Room("Gym")
 hallway = Room('The Hallway', library, quad, parking_lot, gym, None, None,
                "This is the main hallway.The Parking Lot is to the east,"
                " the quad is to the south, the gym is to the west"
@@ -132,15 +135,17 @@ hallway.south = quad
 hallway.east = parking_lot
 hallway.east = gym
 
-library = Room('Library', 'suspicious_room', 'library', None, None, None, None,
+library = Room('Library', 'Suspicious Room', 'Library', None, None, None, None,
                "This is the library. Books cover the walls. "
                "There's a path to the south back to the Main Hallway "
                "and a suspicious door to the north.",)
 
+library.north = suspicious_room
+
 
 player = Player(R19A)
 
-c1 = Character("Orc1", 100, sword, None)
+c1 = Character("Orc1", 100, sword1, None)
 c2 = Character("Orc2", 100, sword2, None)
 c1.attack(c2)
 c2.attack(c1)
