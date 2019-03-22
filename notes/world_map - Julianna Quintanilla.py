@@ -101,17 +101,26 @@ npc3 = Character("Michael Jackson", 40, special2, None)
 npc4 = Character("King Wiebe", 600, taser_gun1, armor5)
 npc5 = Character("Eggman", 100, sword1, armor6)
 # rooms
-R19A = Room("R19A")
-art_building = Room("Art Building")
-hallway = Room("Hallway")
-library = Room("Library")
+R19A = Room("R19A", 'Parking Lot', None, None, None, None, None,
+            "This is R19A, Mr.Wiebe's classroom. Despite it being time for class, "
+            "nobody is in here including Mr.Wiebe. You wonder where everybody could be. "
+            "To the Parking lot is through the door to the North.")
+parking_lot = Room("Parking Lot", None, 'R19A', 'Art Building', 'Hallway', None, None,
+                   "There are cars parked here. To the south is Mr. Wiebe's room."
+                   " To the west is the Main hallway and to the east is the art building.")
+art_building = Room("Art Building", None, 'Parking Lot', None, None, None, None,
+                    "There are paintings covering the walls, To the west is the Parking Lot.")
+hallway = Room("Hallway", 'Library', 'Quad', 'Parking Lot', 'Gym', None, None,
+               "This is the main hallway. The Parking Lot is to the east." 
+               "The Quad is to the south. The Gym is to the west. The Library is to the north.")
+library = Room("Library", 'Suspicious Room', 'Library', None, None, None, None,
+               "This is the library. Books cover the walls. "
+               "There's a path to the south back to the Main Hallway "
+               "and a suspicious door to the north.",)
 quad = Room("Quad")
 gym = Room("Gym")
 suspicious_room = Room("Suspicious Room")
 
-parking_lot = Room('The Parking Lot', None, R19A, art_building, hallway, None, None,
-                   "There are cars parked here. To the south is Mr. Wiebe's room."
-                   " To the west is the Main hallway and to the east is the art building.")
 
 R19A.north = parking_lot
 parking_lot.south = R19A
@@ -120,28 +129,16 @@ parking_lot.south = R19A
 # Put Them Away
 # R19A = Room("R19A", 'parking_lot')
 
-art_building = Room('Art Building', None, parking_lot, None, None, None, None,
-                    "There are paintings covering the walls. "
-                    "To the west is The Parking Lot")
-
 art_building.west = parking_lot
-hallway = Room('The Hallway', library, quad, parking_lot, gym, None, None,
-               "This is the main hallway.The Parking Lot is to the east,"
-               " the quad is to the south, the gym is to the west"
-               " and the library is to the north.")
 
 hallway.north = library
 hallway.south = quad
 hallway.east = parking_lot
 hallway.east = gym
 
-library = Room('Library', 'Suspicious Room', 'Library', None, None, None, None,
-               "This is the library. Books cover the walls. "
-               "There's a path to the south back to the Main Hallway "
-               "and a suspicious door to the north.",)
 
 library.north = suspicious_room
-
+# DO NOT TOUCH
 
 player = Player(R19A)
 
