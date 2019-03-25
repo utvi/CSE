@@ -113,14 +113,16 @@ art_building = Room("Art Building", None, 'Parking Lot', None, None, None, None,
 hallway = Room("Hallway", 'Library', 'Quad', 'Parking Lot', 'Gym', None, None,
                "This is the main hallway. The Parking Lot is to the east." 
                "The Quad is to the south. The Gym is to the west. The Library is to the north.")
-library = Room("Library", 'Suspicious Room', 'Library', None, None, None, None,
+library = Room("Library", 'Suspicious Room', 'Hallway', None, None, None, None,
                "This is the library. Books cover the walls. "
                "There's a path to the south back to the Main Hallway "
-               "and a suspicious door to the north.",)
+               "and a suspicious door to the north.")
+suspicious_room = Room("Suspicious Room", None, 'Library', None, None, 'Kings Room', None,
+                       "This is a suspicious room. There is a path the the south leading back "
+                       "to the Library, and there is a ladder leading up to a hatch to another room.")
+kings_room = Room("Kings Room", None, None, None, None, None, 'Suspicious Room', )
 quad = Room("Quad")
 gym = Room("Gym")
-suspicious_room = Room("Suspicious Room")
-
 
 R19A.north = parking_lot
 parking_lot.south = R19A
