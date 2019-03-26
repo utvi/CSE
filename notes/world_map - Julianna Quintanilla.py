@@ -121,7 +121,11 @@ suspicious_room = Room("Suspicious Room", None, 'Library', None, None, 'Kings Ro
                        "This is a suspicious room. There is a path the the south leading back "
                        "to the Library, and there is a ladder leading up to a hatch to another room.")
 kings_room = Room("Kings Room", None, None, None, None, None, 'Suspicious Room', )
-quad = Room("Quad")
+quad = Room("Quad", 'Hallway', 'Cafeteria', 'East Building', 'West Building', None, None,
+            "This is the quad. It is an open space at the center of the school. There is "
+            "a path to the north leading to the Hallway, a path to the south leading to the cafeteria, "
+            "a path to the east leading to the East Building, and a path to the west leading "
+            "to the West Building")
 gym = Room("Gym")
 
 R19A.north = parking_lot
