@@ -126,7 +126,11 @@ quad = Room("Quad", 'Hallway', 'Cafeteria', 'East Building', 'West Building', No
             "a path to the north leading to the Hallway, a path to the south leading to the cafeteria, "
             "a path to the east leading to the East Building, and a path to the west leading "
             "to the West Building")
-gym = Room("Gym")
+gym = Room("Gym", None, 'West Building', 'Hallway', None, None, None,
+           "This is the Gym. There's nobody in here and all of the lights are off. "
+           "There is a path to the south leading to the West Building and a path to the "
+           "west leading back to the hallway.")
+
 
 R19A.north = parking_lot
 parking_lot.south = R19A
