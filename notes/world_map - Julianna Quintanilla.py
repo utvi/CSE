@@ -101,6 +101,8 @@ npc3 = Character("Michael Jackson", 40, special2, None)
 npc4 = Character("King Wiebe", 600, taser_gun1, armor5)
 npc5 = Character("Eggman", 100, sword1, armor6)
 # rooms
+# Put Them Away
+# R19A = Room("R19A", 'parking_lot')
 R19A = Room("R19A", 'Parking Lot', None, None, None, None, None,
             "This is R19A, Mr.Wiebe's classroom. Despite it being time for class, "
             "nobody is in here including Mr.Wiebe. You wonder where everybody could be. "
@@ -130,24 +132,38 @@ gym = Room("Gym", None, 'West Building', 'Hallway', None, None, None,
            "This is the Gym. There's nobody in here and all of the lights are off. "
            "There is a path to the south leading to the West Building and a path to the "
            "west leading back to the hallway.")
+west_building = Room("West Building", 'Gym', 'West Field', 'Quad', 'Restroom', None, None,
+                     "This is the West Building. A large building with a tall ceiling and many "
+                     "classrooms lining the walls. There is a north path to the gym, a south "
+                     "path to the West Field, an east path to the Quad, and a west path "
+                     "to the West Field.")
+restroom = Room("Restroom", None, None, 'West Building', None, None, None,
+                "This is the west building Restroom. There are cockroaches running "
+                "across the floor and all of the stalls are in very poor condition. "
+                "There's a path to the east back to the West Building.", 'Michael Jackson', )
+west_field = Room("West Field", 'West Building', None, None, None, None, None,
+                  "This is the west field. All of the grass is dead leaving a long wide "
+                  "field of brown. To the north is the West Building.")
+cafeteria = Room("Cafeteria", 'Quad', None, None, None, None, None,
+                 "This is the cafeteria. Usually lunch would be served here but the room is "
+                 "empty. There is a door to the south leading outside to the quad.")
+east_building = Room("East Building", None, 'science Building', None, 'Quad', 'East Building Upstairs', None,
+                     "This is the East Building. It's a two story building with very few classrooms. "
+                     "There is a door leading back to the quad, there are stairs leading up to the second "
+                     "story, and there is a door going out to the science building.")
+east_building_upstairs = Room("East Building Upstairs", None, None, None, None, None, 'East Building'
+                              "This is the upstairs of the East Building.")
 
-
+restroom.character = npc3
 R19A.north = parking_lot
 parking_lot.south = R19A
-
-# Option 2
-# Put Them Away
-# R19A = Room("R19A", 'parking_lot')
-
 art_building.west = parking_lot
-
 hallway.north = library
 hallway.south = quad
 hallway.east = parking_lot
 hallway.east = gym
-
-
 library.north = suspicious_room
+
 # DO NOT TOUCH
 
 player = Player(R19A)
@@ -163,6 +179,7 @@ directions = ['north', 'south', 'east', 'west', 'up', 'down']
 while playing:
     print(player.current_location.name)
     print(player.current_location.description)
+#    print(player.current_location.character)
     command = input(">_")
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
