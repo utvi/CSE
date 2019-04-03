@@ -153,6 +153,8 @@ east_building = Room("East Building", None, 'science Building', None, 'Quad', 'E
                      "story, and there is a door going out to the science building.")
 east_building_upstairs = Room("East Building Upstairs", None, None, None, None, None, 'East Building'
                               "This is the upstairs of the East Building.")
+science_building = Room("Science Building", "East Building", None, None, None, None, None,
+                        "This is the science building. ")
 
 restroom.character = npc3
 R19A.north = parking_lot
