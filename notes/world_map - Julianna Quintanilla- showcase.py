@@ -50,7 +50,7 @@ class Player(object):
 
 class Room(object):
     def __init__(self, name, north=None, south=None, east=None, west=None,
-                 up=None, down=None, description="", character="", items=[]):
+                 up=None, down=None, description="", character=None, items=[]):
         self.name = name
         self.north = north
         self.south = south
@@ -86,7 +86,7 @@ dog_treat2 = Item("Brown Treat")
 dog_toy1 = Item("Hard Dog Toy")
 dog_toy2 = Item("Soft Dog Toy")
 pillow1 = Item("Liam Neeson Pillow Body Pillow")
-pillow2 = Item("Pepe The Frog Pillow")
+pillow2 = Item("Danny DeVito Body Pillow")
 pillow3 = Item("Bob Ross Pillow Body Pillow")
 armor1 = Armor("Leather Armor", 30)
 armor2 = Armor("Iron Armor", 50)
@@ -95,7 +95,7 @@ armor4 = Armor("Legendary Armor", 100)
 armor5 = Armor("Wiebe Armor", 150)
 armor6 = Armor("Egg Shell", 25)
 # characters
-npc1 = Character("Juli", 200, battle_axe3, armor4)
+npc1 = Character("Juli", 9001, battle_axe3, armor4)
 npc2 = Character("Mothman", 900, special1, None)
 npc3 = Character("Michael Jackson", 40, special2, None)
 npc4 = Character("King Wiebe", 600, taser_gun1, armor5)
@@ -121,7 +121,8 @@ library = Room("Library", 'Suspicious Room', 'Hallway', None, None, None, None,
                "and a suspicious door to the north.")
 suspicious_room = Room("Suspicious Room", None, 'Library', None, None, 'Kings Room', None,
                        "This is a suspicious room. There is a path the the south leading back "
-                       "to the Library, and there is a ladder leading up to a hatch to another room.")
+                       "to the Library, and there is a ladder leading up to a hatch to another room.",
+                       npc3)
 kings_room = Room("Kings Room", None, None, None, None, None, 'Suspicious Room', )
 quad = Room("Quad", 'Hallway', 'Cafeteria', 'East Building', 'West Building', None, None,
             "This is the quad. It is an open space at the center of the school. There is "
@@ -140,7 +141,7 @@ west_building = Room("West Building", 'Gym', 'West Field', 'Quad', 'Restroom', N
 restroom = Room("Restroom", None, None, 'West Building', None, None, None,
                 "This is the west building Restroom. There are cockroaches running "
                 "across the floor and all of the stalls are in very poor condition. "
-                "There's a path to the east back to the West Building.", 'Michael Jackson', )
+                "There's a path to the east back to the West Building.")
 west_field = Room("West Field", 'West Building', None, None, None, None, None,
                   "This is the west field. All of the grass is dead leaving a long wide "
                   "field of brown. To the north is the West Building.")
