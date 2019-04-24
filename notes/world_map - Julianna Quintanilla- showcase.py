@@ -161,6 +161,7 @@ restroom.character = npc3
 R19A.north = parking_lot
 parking_lot.south = R19A
 parking_lot.east = art_building
+art_building.west = parking_lot
 parking_lot.west = hallway
 art_building.west = parking_lot
 hallway.north = library
