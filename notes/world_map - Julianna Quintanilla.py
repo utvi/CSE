@@ -65,41 +65,190 @@ class Room(object):
 # Items
 
 
-pan = Weapon("Frying Pan", 5)
-sword1 = Weapon("Sword", 15)
-sword2 = Weapon("Orc Sword", 5)
-sword3 = Weapon("Iron Sword", 10)
-sword4 = Weapon("Diamond Sword", 25)
-bow1 = Weapon("Wood Bow", 15)
-bow2 = Weapon("Diamond Bow", 25)
-battle_axe1 = Weapon("Iron Battle Axe", 20)
-battle_axe2 = Weapon("Diamond Battle Axe", 30)
-battle_axe3 = Weapon("Legendary Battle Axe", 40)
-taser_gun1 = Weapon("Taser Gun", 90)
-spray1 = Weapon("Pepper Spray", 20)
-spray2 = Weapon("Anti-Weeb Spray", 50)
-spray3 = Weapon("Anti-Wiebe Spray", 300)
-special1 = Weapon("Moth Claws", 900)
-special2 = Weapon("Hee Hee", 10)
-dog_treat1 = Item("Green Treat")
-dog_treat2 = Item("Brown Treat")
-dog_toy1 = Item("Hard Dog Toy")
-dog_toy2 = Item("Soft Dog Toy")
-pillow1 = Item("Liam Neeson Pillow Body Pillow")
-pillow2 = Item("Pepe The Frog Pillow")
-pillow3 = Item("Bob Ross Pillow Body Pillow")
-armor1 = Armor("Leather Armor", 30)
-armor2 = Armor("Iron Armor", 50)
-armor3 = Armor("Diamond Armor", 80)
-armor4 = Armor("Legendary Armor", 100)
-armor5 = Armor("Wiebe Armor", 150)
-armor6 = Armor("Egg Shell", 25)
+class Pan(Weapon):
+    def __init__(self, damage):
+        super(Pan, self).__init__("Frying Pan", damage)
+
+
+class AntiWiebeSpray(Weapon):
+    def __init__(self, damage):
+        super(AntiWiebeSpray, self).__init__("Anti-Wiebe Spray", damage)
+
+
+class WoodSword(Weapon):
+    def __init__(self, damage):
+        super(WoodSword, self).__init__("Wooden Sword", damage)
+
+
+class OrcSword(Weapon):
+    def __init__(self, damage):
+        super(OrcSword, self).__init__("Orc Sword", damage)
+
+
+class IronSword(Weapon):
+    def __init__(self, damage):
+        super(IronSword, self).__init__("Iron Sword", damage)
+
+
+class DiamondSword(Weapon):
+    def __init__(self, damage):
+        super(DiamondSword, self).__init__("Diamond Sword", damage)
+
+
+class WoodBow(Weapon):
+    def __init__(self, damage):
+        super(WoodBow, self).__init__("Wood Bow", damage)
+
+
+class DiamondBow(Weapon):
+    def __init__(self, damage):
+        super(DiamondBow, self).__init__("Diamond Bow", damage)
+
+
+class IronBattleAxe(Weapon):
+    def __init__(self, damage):
+        super(IronBattleAxe, self).__init__("Iron Battle Axe", damage)
+
+
+class DiamondBattleAxe(Weapon):
+    def __init__(self, damage):
+        super(DiamondBattleAxe, self).__init__("Diamond Battle Axe", damage)
+
+
+class LegendaryBattleAxe(Weapon):
+    def __init__(self, damage):
+        super(LegendaryBattleAxe, self).__init__("Legendary Battle Axe", damage)
+
+
+class TaserGun(Weapon):
+    def __init__(self, damage):
+        super(TaserGun, self).__init__("Taser Gun", damage)
+
+
+class PepperSpray(Weapon):
+    def __init__(self, damage):
+        super(PepperSpray, self).__init__("Pepper Spray", damage)
+
+
+class AntiWeebSpray(Weapon):
+    def __init__(self, damage):
+        super(AntiWeebSpray, self).__init__("Anti Weeb Spray", damage)
+
+
+class MothClaws(Weapon):
+    def __init__(self, damage):
+        super(MothClaws, self).__init__("MothClaws", damage)
+
+
+class HeeHee(Weapon):
+    def __init__(self, damage):
+        super(HeeHee, self).__init__("Hee Hee", damage)
+
+
+pan1 = Pan(5)
+Wood_Sword = WoodSword(15)
+Orc_Sword = OrcSword(5)
+Iron_Sword = IronSword(10)
+Diamond_Sword = DiamondSword(25)
+Wood_Bow = WoodBow(15)
+Diamond_Bow = DiamondBow(25)
+Iron_Battle_Axe = IronBattleAxe(20)
+Diamond_Battle_Axe = DiamondBattleAxe(30)
+Legendary_Battle_Axe = LegendaryBattleAxe(40)
+Taser_Gun = TaserGun(90)
+Pepper_Spray = PepperSpray(20)
+Anti_Weeb_Spray = AntiWeebSpray(50)
+Anti_Wiebe_Spray = AntiWiebeSpray(300)
+Moth_Claws = MothClaws(900)
+Hee_Hee = HeeHee(10)
+
+
+class GreenBall(Item):
+    def __init__(self):
+        super(GreenBall, self).__init__("Green Ball")
+
+
+class RedBall(Item):
+    def __init__(self):
+        super(RedBall, self).__init__("Red Ball")
+
+
+class Bread(Item):
+    def __init__(self):
+        super(Bread, self).__init__("Bread")
+
+
+class ToyTrain(Item):
+    def __init__(self):
+        super(ToyTrain, self).__init__("Toy Train")
+
+
+class LiamNeesonBodyPillow(Item):
+    def __init__(self):
+        super(LiamNeesonBodyPillow, self).__init__("Liam Neeson Body Pillow")
+
+
+class ShrekPillow(Item):
+    def __init__(self):
+        super(ShrekPillow, self).__init__("Shrek Pillow")
+
+
+class BobRossBodyPillow(Item):
+    def __init__(self):
+        super(BobRossBodyPillow, self).__init__("Bob Ross Body Pillow")
+
+
+Green_Ball = GreenBall
+Red_Ball = RedBall
+Bread1 = Bread
+Toy_Train = ToyTrain
+Liam_NeesonBody_Pillow = LiamNeesonBodyPillow
+Shrek_Pillow = ShrekPillow
+Bob_Ross_Body_Pillow = BobRossBodyPillow
+
+
+class LeatherArmor(Armor):
+    def __init__(self, protection):
+        super(LeatherArmor, self).__init__("Leather Armor", protection)
+
+
+class IronArmor(Armor):
+    def __init__(self, protection):
+        super(IronArmor, self).__init__("Iron Armor", protection)
+
+
+class DiamondArmor(Armor):
+    def __init__(self, protection):
+        super(DiamondArmor, self).__init__("Diamond Armor", protection)
+
+
+class LegendaryArmor(Armor):
+    def __init__(self, protection):
+        super(LegendaryArmor, self).__init__("Legendary Armor", protection)
+
+
+class WiebeArmor(Armor):
+    def __init__(self, protection):
+        super(WiebeArmor, self).__init__("Wiebe Armor", protection)
+
+
+class EggShell(Armor):
+    def __init__(self, protection):
+        super(EggShell, self).__init__("Egg Shell", protection)
+
+
+Leather_Armor = LeatherArmor(30)
+Iron_Armor = IronArmor(50)
+Diamond_Armor = DiamondArmor(80)
+Legendary_Armor = LegendaryArmor(100)
+Wiebe_Armor = WiebeArmor(150)
+Egg_Shell = EggShell(25)
 # characters
-npc1 = Character("Juli", 200, battle_axe3, armor4)
-npc2 = Character("Mothman", 900, special1, None)
-npc3 = Character("Michael Jackson", 40, special2, None)
-npc4 = Character("King Wiebe", 600, taser_gun1, armor5)
-npc5 = Character("Eggman", 100, sword1, armor6)
+Juli1 = Character("Juli", 200, Legendary_Battle_Axe, Legendary_Armor)
+Mothman1 = Character("Mothman", 900, Moth_Claws, None)
+Michael_Jackson = Character("Michael Jackson", 40, Hee_Hee, None)
+King_Wiebe = Character("King Wiebe", 600, Taser_Gun, Wiebe_Armor)
+Eggman1 = Character("Eggman", 100, Wood_Sword, Egg_Shell)
 # rooms
 # Put Them Away
 # R19A = Room("R19A", 'parking_lot')
@@ -156,7 +305,7 @@ east_building_upstairs = Room("East Building Upstairs", None, None, None, None, 
 science_building = Room("Science Building", "East Building", None, None, None, None, None,
                         "This is the science building. There is a path to the ")
 
-restroom.character = npc3
+restroom.character = Michael_Jackson
 R19A.north = parking_lot
 parking_lot.south = R19A
 parking_lot.east = art_building
@@ -179,8 +328,8 @@ restroom.east = west_building
 
 player = Player(R19A)
 
-c1 = Character("Orc1", 100, sword1, None)
-c2 = Character("Orc2", 100, sword2, None)
+c1 = Character("Orc1", 100, Wood_Sword, None)
+c2 = Character("Orc2", 100, Orc_Sword, None)
 c1.attack(c2)
 c2.attack(c1)
 
